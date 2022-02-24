@@ -1,0 +1,170 @@
+/* CSS for All */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/* CSS for Header */
+#header{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 8px -2px gray;
+    position: relative;
+    z-index: 2;
+}
+
+#header .header-inner{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#header .header-inner .logo{
+    width: 25%;
+    height: 100%;
+    display: flex;
+}
+
+.logo img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#header .header-inner .nav{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.main-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Archivo', sans-serif;
+}
+
+.main-menu>li{
+    width: fit-content;
+    margin-right: 15px;
+    padding: 5px;
+    position: relative;
+}
+
+.main-menu>li>a{
+    text-decoration: none;
+    color: #020506;
+    text-transform: uppercase;
+    font-family: 'Archivo', sans-serif;
+    font-size: 14px;
+}
+
+.main-menu>li>a.active{
+    color: #0b249e;
+    text-shadow: 1px 1px #e7e2e2;
+}
+
+.sub-menu{
+    display: none;
+}
+
+.main-menu>li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    background-color: #F4F4F4;
+    padding: 10px;
+    width: max-content;
+}
+
+.main-menu>li:hover .sub-menu li{
+    padding: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #000;
+}
+
+.main-menu>li:hover .sub-menu li a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Archivo', sans-serif;
+}
+
+.main-menu>li>a:hover{
+    color: #0b249e;
+}
+/* CSS for Main */
+
+/* CSS for Silder */
+#slider{
+    width: 100%;
+    height: 700px;
+    /* display: flex;*/
+    position: relative;
+    display: none;
+}
+
+.slider.item{
+    width: 100%;
+    height: 100%;
+}
+
+.slider.item img{
+    width: 100%;
+    height: 100%;
+}
+
+span .fa-circle-left{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: calc(400px - 15px);
+    left: 10px;
+    color: white;
+    font-size: 30px;
+}
+
+span .fa-circle-right{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: calc(400px - 15px);
+    right: 10px;
+    color: white;
+    font-size: 30px;
+}
+
+/*CSS for Intro*/
+#intro{
+    display: flex;
+    justify-content: center;
+    padding: 60px 0;
+}
+
+.intro-inner{
+    width: 80%;
+}
+
+.intro-inner h3{
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.intro-content{
+    display: flex;
+}
+
+.intro-content .intro-item{
+    width: 30%;
+}
+
+.intro-content .intro-item img{
+    width: 30%;
+}
