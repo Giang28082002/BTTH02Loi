@@ -403,6 +403,9 @@ button:hover{
 .slider{
     padding-top: 100px;
 }
+.slider .slide-main{
+    padding-bottom: 50px;
+}
 .slider-title{
     text-align: center;
     padding-bottom: 50px;
@@ -434,7 +437,7 @@ button:hover{
 /* css for footer */
 #footer{
     height: 500px;
-    background-color: blue;
+    background-color: rgb(48, 48, 170);
 }
 .footer-wrap{
     display: flex;
